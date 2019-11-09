@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#demo").hide();
+  });
+  $("#show").click(function(){
+    $("#demo").show();
+  });
+  $("#toggle").click(function(){
+    $("#demo").toggle();
+  });
+  $("#red").click(function(){
+    $("#demo").css({"background-color":"red"});
+  });
+  $("#blue").click(function(){
+    $("#demo").css({"background-color":"green"});
+  });
+});
+</script>
+</head>
+<body>
+
+
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="toggle">Toggle</button>
+<div id="demo">This is a div!!!!!!!!!!!!!!!!</div>
+<button id="red">Red</button>
+<button id="blue">Green</button>
+
+</body>
+</html>
