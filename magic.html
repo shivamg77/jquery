@@ -1,0 +1,18 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.ajax({url: "https://reqres.in/api/users/2", success: function(result){
+      $("#demo").html(result);
+    }});
+  });
+});
+</script>
+</head>
+<body>
+   <button>I am the magic button!yeah..!</button>
+   <div id="demo"><h3>The response will appear here..</h3></div>
+</body>
+</html>
